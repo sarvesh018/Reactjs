@@ -1,21 +1,28 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 
 function UseState() {
-
-    const [count, setCount] = useState(0);
-    const [clickCount, setClickCount] = useState(0);
-    const increment = () => {
-        setCount((c) => c + 1);
-    };
-    function clicks(){
-        setClickCount(clickCount+1);
-    }
-    return (
-      <div className="flex flex-col gap-8">
+  const [count, setCount] = useState(0);
+  const [clickCount, setClickCount] = useState(0);
+  const increment = () => {
+    setCount((c) => c + 1);
+  };
+  function clicks() {
+    setClickCount(clickCount + 1);
+  }
+  return (
+    <>
+    <div className="gap-8 flex items-center justify-center">
+      <div className="flex gap-10 flex-col items-center justify-center w-3/4">
         <h1>useState</h1>
-        <div >
+        <p>
+          State as a Snapshot explains why this is happening. Setting state
+          requests a new re-render, but does not change it in the already
+          running code. So score continues to be 0 right after you call
+          setScore(score +1).
+        </p>
+        <div>
           <button
-          className="mx-2 my-2"
+            className="mx-2 my-2"
             onClick={() => {
               increment();
               clicks();
@@ -24,7 +31,7 @@ function UseState() {
             +1
           </button>
           <button
-          className="mx-2 my-2"
+            className="mx-2 my-2"
             onClick={() => {
               increment();
               increment();
@@ -38,8 +45,9 @@ function UseState() {
           <p>Count is: {count}</p>
         </div>
       </div>
-    );
+    </div>
+    </>
+  );
 }
-
 
 export default UseState;

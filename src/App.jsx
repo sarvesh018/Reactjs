@@ -4,18 +4,19 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 
 import UseState from "./components/UseState";
 import Form from "./components/Form";
+import Home from "./components/Home";
 
 function App() {
   
   return (
     <>
-      {/* <UseState/> */}
-      <Form/>
-      {/* <Router>
+      <Router>
         <Routes>
-          <Route path="/" element={<UseState/>}/>
+          <Route path="/" element={<Home/>}/>
+          <Route path="form" element={<Form/>}/>
+          <Route path="useState" element={<UseState/>}/>
         </Routes>
-      </Router> */}
+      </Router>
     </>
   );
 }
