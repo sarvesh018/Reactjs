@@ -10,12 +10,12 @@ function App() {
   return (
     <>
       {/* <UseState/> */}
-      {/* <Form/> */}
-      <Router>
+      <Form/>
+      {/* <Router>
         <Routes>
           <Route path="/" element={<UseState/>}/>
         </Routes>
-      </Router>
+      </Router> */}
     </>
   );
 }
