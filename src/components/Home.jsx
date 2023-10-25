@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom'
 export default function Home() {
     const components = [
         {id:"1", links:"useState"}, 
-        {id:"2", links:"form"}
+        {id:"2", links:"form"},
+        {id: 3, links:"checkBox"}
     ];
   return (
     <div className="bg-[#61DBFB] text-black px-10 placeholder-gray-200 rounded-xl">
