@@ -7,7 +7,8 @@ export default function Home() {
         {id: 1, links:"useState"}, 
         {id: 2, links:"form"},
         {id: 3, links:"moveItems"},
-        {id: 4, links:"temp"}
+        {id: 4, links:"temp"},
+        {id: 5, links:"jsonAPI"}
     ];
   return (
     <div className="bg-[#61DBFB] text-black px-10 placeholder-gray-200 rounded-xl">

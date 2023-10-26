@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import GoBack from "./GoBack";
 
 export default function MpveItems() {
   const [leftList, setLeftList] = useState([
@@ -103,6 +104,9 @@ export default function MpveItems() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="mt-10">
+          <GoBack/>
         </div>
       </div>
     </div>

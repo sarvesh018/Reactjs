@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import GoBack from "./GoBack";
 
 function UseState() {
   const [count, setCount] = useState(0);
@@ -11,7 +12,7 @@ function UseState() {
   }
   return (
     <>
-    <div className="gap-8 flex items-center justify-center">
+    <div className="gap-8 flex flex-col items-center justify-center">
       <div className="flex gap-10 flex-col items-center justify-center w-3/4">
         <h1>useState</h1>
         <p>
@@ -44,6 +45,9 @@ function UseState() {
           <p>Number of clicks: {clickCount}</p>
           <p>Count is: {count}</p>
         </div>
+      </div>
+      <div className="mt-10">
+        <GoBack/>
       </div>
     </div>
     </>
