@@ -6,8 +6,8 @@ import Form from "./components/Form";
 import Home from "./components/Home";
 import MoveItems from "./components/MoveItems";
 import Temp from "./components/Temp";
-import JsonAPI from "./components/JsonAPI";
-import GoBack from "./components/GoBack";
+import JsonAPI from "./components/MockUp";
+import MockUp from "./components/MockUp";
 
 function App() {
   
@@ -21,7 +21,7 @@ function App() {
           <Route path="moveItems" element={<MoveItems/>}/>
           <Route path="temp" element={<Temp/>}/>
           <Route path="jsonAPI" element={<JsonAPI/>}/>
-          <Route path="goBack" element={<GoBack/>}/>
+          <Route path="mockUp" element={<MockUp/>}/>
         </Routes>
       </Router>
     </>
