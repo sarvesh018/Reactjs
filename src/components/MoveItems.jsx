@@ -68,7 +68,7 @@ export default function MpveItems() {
                 moveItems(leftList, setLeftList, rightList, setRightList)
               }
             >
-              Right Shift {<br />} {"-->"}
+            {"⇛"}
             </button>
 
             {/**Button to Shift Items to LEFT */}
@@ -78,7 +78,7 @@ export default function MpveItems() {
                 moveItems(rightList, setRightList, leftList, setLeftList)
               }
             >
-              Left Shift {<br />} {"<--"}
+            {"⇚"}
             </button>
           </div>
           <div>
