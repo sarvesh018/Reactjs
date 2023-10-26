@@ -1,11 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-function Temp() {
-  return (
-    <div>
-        Temp Component
-    </div>
-  );
+export default function Temp() {
+  return <div>Temp Component</div>;
 }
-
-export default Temp;
