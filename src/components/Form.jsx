@@ -1,13 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import GoBack from "./GoBack";
 
 export default function Form() {
   const [name, setName] = useState("Sarvesh");
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState('');
+
+  const handleAlert = (e) => {
+    setMessage(e.target.value);
+  }
 
   function handleSubmit(e) {
     e.preventDefault();
-    alert(`You said "${message}" to ${name}`);
+
+    if(message.trim().length > 0){
+      alert(`You said "${message}" to ${name}`);
+    } 
+    else{
+      alert("Invalid Message")
+    }
   }
 
   return (
@@ -25,7 +35,7 @@ export default function Form() {
             <label>
               <textarea
                 value={message}
-                onChange={(e) => setMessage(e.target.value)}
+                onChange={(e) => handleAlert(e)}
                 id=""
                 cols="30"
                 rows="3"
