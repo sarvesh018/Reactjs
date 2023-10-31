@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import { Products } from './Constants'
+import GoBack from './GoBack'
 
 
 //productCategoryComponent
@@ -95,6 +96,7 @@ export default function MockUp() {
   const [filterText, setFilterText] = useState('');
   const [inStock, setInStock] = useState(false);
   return (
+    <div className='flex flex-col gap-10'>
     <div className='flex flex-col gap-10 items-center rounded-lg justify-center pb-10 bg-[#5c3c3c]'>
       <SearchBar
         filterText={filterText}
@@ -107,6 +109,10 @@ export default function MockUp() {
         filterText={filterText}
         inStock={inStock}
       />
+    </div>
+    <div>
+      <GoBack/>
+    </div>
     </div>
   )
 }
